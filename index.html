@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vanilla JS Comment</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+	
+	<style>
+		body{
+			padding: 33px;
+			margin: auto;
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<div>
+		<table id="commentsTable" class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+			<tr>
+				<th>Vanilla JS Comments</th>
+			</tr>
+		</table>
+	
+		<hr>
+	
+		<form onsubmit="event.preventDefault(); CommentApp.addComment()">
+			<div class="mdl-textfield mdl-js-textfield">
+				<input class="mdl-textfield__input" type="text" id="commentVal" name="ticker">
+				<label class="mdl-textfield__label" for="commentVal">Your Comment...</label>
+			</div>
+			<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+			  COMMENT
+			</button>
+		</form>
+		
+	</div>
+	
+	<script type="text/javascript" src="comment.js"></script>
+</body>
+</html>
